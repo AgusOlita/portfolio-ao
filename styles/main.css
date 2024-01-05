@@ -7,15 +7,7 @@
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-header a {
+a {
     text-decoration: none;
     color: white;
     padding: 0 1em;
@@ -34,16 +26,76 @@ body {
 }
 
 .main-grid {
-    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: fit-content;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
-    "area 1 area 1 area1 area1 area1"
-    "area2 area2 area3 area 4 area 4"
-    "area 5 area 5 area 5 area 6 area6";
+    "area1 area1 area2 area2 area2"
+    "area3 area3 area3 area4 area4"
+    "area5 area5 area5 area5 area5";
 }
 
 .grid-item-01 {
-    
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(255, 157, 0, 1) 100%);
+    background-blend-mode: normal;
+    grid-area: area1;
+    border: solid 1px white;
 }
+
+.grid-item-02 {
+    width: fit-content;
+    height: auto;
+    background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(255, 157, 0, 1) 100%);
+    background-blend-mode: normal;
+    grid-area: area2;
+    border: solid 1px white;
+    text-align: justify;
+}
+
+.grid-item-03 {
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(255, 157, 0, 1) 100%);
+    background-blend-mode: normal;
+    grid-area: area3;
+    border: solid 1px white;
+}
+
+.grid-item-04 {
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(255, 157, 0, 1) 100%);
+    background-blend-mode: normal;
+    grid-area: area4;
+    border: solid 1px white;
+}
+
+.grid-item-05 {
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(255, 157, 0, 1) 100%);
+    background-blend-mode: normal;
+    grid-area: area5;
+    border: solid 1px white;
+}
+
+
