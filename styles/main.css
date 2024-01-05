@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&family=Tektur:wght@400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: 'Tektur';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    position: relative;
+    font-size: 5rem;
+    left: 2%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main-grid {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas: 
+    "area 1 area 1 area1 area1 area1"
+    "area2 area2 area3 area 4 area 4"
+    "area 5 area 5 area 5 area 6 area6";
+}
+
+.grid-item-01 {
+    
+}
